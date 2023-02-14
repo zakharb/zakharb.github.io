@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Ze'space</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -99,7 +99,7 @@
           <div class="col-lg-4 col-sm-6 mb-4">
               <!-- Portfolio item 3-->
               <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                       <div class="portfolio-hover">
                       </div>
                       <img class="img-fluid" src="img/portfolio/2.png"/>
@@ -113,10 +113,10 @@
           <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
               <!-- Portfolio item 4-->
               <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                       <div class="portfolio-hover">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/4.png"/>
+                      <img class="img-fluid" src="img/portfolio/3.png"/>
                   </a>
                   <div class="portfolio-caption bg-black">
                       <div class="portfolio-caption-heading text-light">ReactAPI</div>
@@ -127,10 +127,10 @@
           <div class="col-lg-4 col-sm-6 mb-4">
               <!-- Portfolio item 2-->
               <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                       <div class="portfolio-hover">
                       </div>
-                      <img class="img-fluid" src="img/portfolio/3.png"/>
+                      <img class="img-fluid" src="img/portfolio/4.png"/>
                   </a>
                   <div class="portfolio-caption bg-black">
                       <div class="portfolio-caption-heading text-light">Syslogen</div>
@@ -141,7 +141,7 @@
           <div class="col-lg-4 col-sm-6">
               <!-- Portfolio item 6-->
               <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                       <div class="portfolio-hover">
                       </div>
                       <img class="img-fluid" src="img/portfolio/5.png"/>
@@ -155,7 +155,7 @@
           <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
               <!-- Portfolio item 5-->
               <div class="portfolio-item">
-                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                       <div class="portfolio-hover">
                       </div>
                       <img class="img-fluid" src="img/portfolio/6.png"/>
@@ -349,18 +349,17 @@
             <div class="col-lg-8">
               <div class="modal-body">
                 <!-- Project details-->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/1.jpg"/>
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <img class="img-fluid d-block mx-auto" src="img/modal/1.png"/>
+                <p class="item-intro text-muted">Open Source Windows Event Collector.</p>
+                <p>OpenWEC allows you to collect logs from Windows machines to Linux Server using native Windows Event Forwarding and Event Collector. This makes it easy to collect logs over HTTP, providing flexibility and higher performance than other alternatives.</p>
                 <ul class="list-inline">
                   <li>
-                    <strong>Client:</strong>
-                    Threads
+                    <strong>Github:</strong>
+                    <a href="https://github.com/zakharb/openwec">Open WEC</a>
                   </li>
                   <li>
-                    <strong>Category:</strong>
-                    Illustration
+                    <strong>Stack:</strong>
+                    Python FastAPI Docker-Compose Nginx MongoDB MQTT
                   </li>
                 </ul>
                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -375,10 +374,201 @@
     </div>
   </div>
   <!-- Portfolio item 2 modal popup-->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="img/close-icon.svg" alt="Close modal" />
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <img class="img-fluid d-block mx-auto" src="img/modal/2.png"/>
+                <p class="item-intro text-muted">Microservice Architecture with FastAPI and Docker.</p>
+                <p>MicroAPI is fully separates API in Async mode based on Microservices
+                  <p>For CRUD operations is used Customer - Product - Price - Order model
+                    <br>The Customer buys a Product with a different Price and receives an Order
+                    <br>The Price is calculated including taxes/discounts depending on the type of customer
+                  </p>
+                  <p>Each part is work like Microservice
+                  <br>The Microservice runs in separate Docker container
+                </p>
+                <ul class="list-inline">
+                  <li>
+                    <strong>Github:</strong>
+                    <a href="https://github.com/zakharb/microapi">Micro API</a>
+                  </li>
+                  <li>
+                    <strong>Stack:</strong>
+                    Python FastAPI Docker-Compose Nginx Postgres
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Portfolio item 3 modal popup-->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="img/close-icon.svg" alt="Close modal" />
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <img class="img-fluid d-block mx-auto" src="img/modal/3.png"/>
+                <p class="item-intro text-muted">Reative Frontend and fast Backend.</p>
+                <p>ReactAPI is an example of user interface based on 
+                  <br>JavaScript library React on the Frontend
+                  <br>FastAPI and Postgres on the Backend
+                </p>
+                <p>For CRUD operations is used Tickets-Comments model
+                  <br>The user can create Tickects and add Comments to them
+                </p>
+                <p>The UI is in reactive mode and notifies changes immediately
+                  <br>Backend works in async mode with high performance and lightweight API
+                </p>
+                <ul class="list-inline">
+                  <li>
+                    <strong>Github:</strong>
+                    <a href="https://github.com/zakharb/reactapi">React API</a>
+                  </li>
+                  <li>
+                    <strong>Stack:</strong>
+                    Python FastAPI React Docker-Compose Postgres Nginx
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Portfolio item 4 modal popup-->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="img/close-icon.svg" alt="Close modal" />
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <img class="img-fluid d-block mx-auto" src="img/modal/4.png"/>
+                <p class="item-intro text-muted">The simplest Syslog Generator.</p>
+                <p>Syslogen is the simple Syslog generator that creates messages from file and send them to external Syslog server.
+                <ul class="list-inline">
+                  <li>
+                    <strong>Github:</strong>
+                    <a href="https://github.com/zakharb/syslogen">Syslogen</a>
+                  </li>
+                  <li>
+                    <strong>Stack:</strong>
+                    Python Argparser
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
   <!-- Portfolio item 5 modal popup-->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="img/close-icon.svg" alt="Close modal" />
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <img class="img-fluid d-block mx-auto" src="img/modal/5.png"/>
+                <p class="item-intro text-muted">Simple and Lightweight SIEM.</p>
+                <p>Simple and Lightweight SIEM using IoT and Machine Learning power.
+                <ul class="list-inline">
+                  <li>
+                    <strong>Github:</strong>
+                    <a href="https://github.com/zakharb/">FUSI</a>
+                  </li>
+                  <li>
+                    <strong>Stack:</strong>
+                    Python Asyncio IoT MQTT
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
   <!-- Portfolio item 6 modal popup-->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="img/close-icon.svg" alt="Close modal" />
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <img class="img-fluid d-block mx-auto" src="img/modal/6.png"/>
+                <p class="item-intro text-muted">Get all information from AWS - S3 EC2 SQS.</p>
+                <p>AWS Client is python utility that use boto3 library to get information about EC2 instances to put, get files from S3 buckets to send, receive messages from SQS</p>
+                <ul class="list-inline">
+                  <li>
+                    <strong>Github:</strong>
+                    <a href="https://github.com/zakharb/awsconnect">AWS Client</a>
+                  </li>
+                  <li>
+                    <strong>Stack:</strong>
+                    Python Boto3
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>

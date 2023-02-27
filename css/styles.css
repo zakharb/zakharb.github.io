@@ -11559,7 +11559,7 @@ header.masthead .masthead-heading {
   position: relative;
   float: right;
   width: 100%;
-  padding: 0 80px 0 20px;
+  padding: 0 0px 0 20px;
   text-align: left;
 }
 .timeline > li .timeline-panel:before {
@@ -11598,7 +11598,7 @@ header.masthead .masthead-heading {
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
-  padding: 0 20px 0 20px;
+  padding: 0 0px 0 20px;
   text-align: left;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {

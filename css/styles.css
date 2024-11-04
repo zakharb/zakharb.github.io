@@ -11302,13 +11302,14 @@ html {
 }
 
 body {
-  position: relative;
-  overflow-x: hidden;
-  background-attachment: fixed;
+/*  position: relative;*/
+/*  overflow-x: hidden;*/
+ /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/bg.jpg");
+  background-size: cover;*/
+/*  background-color: #69696e;*/
+  background-color: #000;
 
 }
 
@@ -11402,11 +11403,13 @@ p {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #212529;
-    opacity: 0.95;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: rgba(33, 37, 41, 0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(5px);
   }
+
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }

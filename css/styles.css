@@ -648,6 +648,7 @@ progress {
 }
 
 @media (min-width: 576px) {
+
   .container-sm, .container {
     max-width: 540px;
   }
@@ -11573,6 +11574,17 @@ header.masthead .masthead-heading {
   padding: 0;
   list-style: none;
 }
+
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+}
+
+@media (min-width: 768px) {
 .timeline:before {
   position: absolute;
   top: 0;
@@ -11583,6 +11595,8 @@ header.masthead .masthead-heading {
   content: "";
   background-color: #e9ecef;
 }
+}
+
 .timeline > li {
   position: relative;
   min-height: 50px;
@@ -11665,6 +11679,7 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
+  margin-top: 10px;
   text-transform: none;
 }
 .timeline .timeline-body {
